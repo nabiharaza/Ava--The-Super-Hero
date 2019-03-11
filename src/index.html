@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "css.css" />
+    <style>
+        html {
+            background-color: #706e70;
+            overflow-x: hidden;
+        }
+        body {
+            margin: 0px;
+        }
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .creds {
+            animation: cssAnimation 0s 5s forwards;
+            visibility: hidden;
+        }
+        .txt {
+            animation: cssAnimation 0s 7s forwards;
+            visibility: hidden;
+            font-family: helvetica;
+            z-index: 9999;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+            margin-top: 25%;
+            /*-webkit-animation-name: slidetext; /* Safari 4.0 - 8.0 */
+            /*-webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+            /*animation-name: slidetext;
+                animation-duration: 10s;*/
+        }
+        .centerimg {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .sideimg {
+            position: absolute;
+            top: 1px;
+        }
+        .superyou {
+            font-size: 12.5rem;
+            font-weight: 900;
+        }
+        .credits {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+        .oval {
+            width: 48rem;
+            height: 28rem;
+            position: absolute;
+            z-index: 9999;
+            background: #000;
+            border-radius: 50%;
+            -ms-transform: rotate(10deg); /* IE 9 */
+            -webkit-transform: rotate(20deg); /* Safari */
+            transform: rotate(10deg);
+            -webkit-animation-name: slideOval; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+            /*animation-name: slidetext;
+                animation-duration: 10s;*/
+            animation-fill-mode: forwards;
+        }
+        @keyframes cssAnimation {
+            to   { visibility: visible; }
+        }
+        /*@keyframes slidetext {
+            0%   {left: -50rem; top:0px;}
+            100% {left: 0px; top:0px;}
+          }*/
+        @keyframes slideOval {
+            0%   {left: -950rem; top:0px;}
+            25%  {left: 20rem; top: 50rem}
+            100% {left: 200rem; top: 30rem;}
+        }
+    </style>
+    <title>Interactive Story</title>
+</head>
+<body>
+<div class="parent">
+    <div class="child">
+        <div class="creds">
+            <div class="oval"></div>
+            <div class="txt">
+                <div class="superyou">SUPERYOU</div>
+                <div class="credits">an interactive story telling experience</div>
+                <div class="credits">by Alyssa Minko </div>
+            </div>
+        </div>
+        <img class="centerimg" src="img/City_Background_01.png" />
+        <img class="sideimg" src="img/City_Foreground_01.png" />
+    </div>
+</div>
+</body>
+</html>
