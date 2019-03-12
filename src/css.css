@@ -1,0 +1,98 @@
+html {
+    font-family: Verdana;
+    background-color: #706e70;
+    overflow-x: hidden;
+}
+body {
+    margin: 0px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+}
+.center {
+    display: block;
+    margin: auto;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.creds {
+    animation: cssAnimation 0s 5s forwards;
+    visibility: hidden;
+}
+.txt {
+    animation: cssAnimation 0s 7s forwards;
+    visibility: hidden;
+    font-family: helvetica;
+    z-index: 9999;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    margin-top: 25%;
+    /*-webkit-animation-name: slidetext; /* Safari 4.0 - 8.0 */
+    /*-webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    /*animation-name: slidetext;
+        animation-duration: 10s;*/
+}
+.centerimg {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.sideimg {
+    position: absolute;
+    top: 1px;
+    width:100%;
+}
+.superyou {
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+.credits {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.storyline{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display:none;
+}
+
+.oval {
+    width: 48rem;
+    height: 28rem;
+    position: absolute;
+    z-index: 9999;
+    background: #000;
+    border-radius: 50%;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(10deg);
+    -webkit-animation-name: slideOval; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    /*animation-name: slidetext;
+        animation-duration: 10s;*/
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to   { visibility: visible; }
+}
+/*@keyframes slidetext {
+    0%   {left: -50rem; top:0px;}
+    100% {left: 0px; top:0px;}
+  }*/
+@keyframes slideOval {
+    0%   {left: -950rem; top:0px;}
+    25%  {left: 20rem; top: 50rem}
+    100% {left: 200rem; top: 30rem;}
+}
+
