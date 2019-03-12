@@ -42,12 +42,12 @@ body {
     /*animation-name: slidetext;
         animation-duration: 10s;*/
 }
-.centerimg {
+.center-img {
     position: relative;
     top: 0;
     left: 0;
 }
-.sideimg {
+.side-img {
     position: absolute;
     top: 1px;
     width:100%;
